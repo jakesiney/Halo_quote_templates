@@ -39,10 +39,10 @@
       "textalign": "center"
     },
     {
-      "id": 326,
+      "id": 361,
       "pdftemplate_id": 73,
       "sequence": 3,
-      "sytemuse": "PRICE",
+      "sytemuse": "BASEPRICE",
       "title": "Unit Price",
       "textalign": "right"
     },
@@ -92,6 +92,6 @@
   "override_attachment_name": "",
   "portal_display_type": 0,
   "pdftinvoicexmltemplate_name": "",
-  "___loaded_at": "2024-11-14T17:03:17.699Z",
+  "___loaded_at": "2024-11-15T14:12:00.954Z",
   "access_control": null
 }
