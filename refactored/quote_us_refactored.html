@@ -106,13 +106,16 @@
                                         section.products table tbody td:last-of-type td:nth-of-type(6){text-align:right}
                                         
                                         section.totals table tbody tr td:nth-of-type(3){width:15%;text-align:right}
-                                        section.totals table tbody tr td:nth-of-type(2){width:15%;text-align:right}
+                                        section.totals table tbody tr td:nth-of-type(2){width:13%;text-align:right}
                                         section.totals table tbody tr td {border:1px solid #fff}
                                         section.totals {margin-bottom:10px;margin-top:20px}
                                         
                                         section.text{margin-bottom:20px}
                                         section.text p{margin-bottom:10px}
                                         section.text p:last-of-type{margin-bottom:0}
+                                        th {
+                                            font-weight: normal; /* Override bold */
+                                        }
                                     </style>
 
 
@@ -131,7 +134,9 @@
                                                         <address>$USERNAME<address>
                                                         <address>$DELIVERYADDRESS1</address>
                                                         <address>$DELIVERYADDRESS2</address>
+                                                        <address>$DELIVERYADDRESS3</address>
                                                         <address>$DELIVERYPOSTCODE</address>
+                                                        <address>$DELIVERYADDRESS4</address>
                                                         <div>
                                                             <a href="$SITEPHONENUMBER">$SITEPHONENUMBER</p>
                                                         </div>
@@ -158,9 +163,9 @@
                                                 </div>
                                                 <div class="body">
                                                     <p>Date issued:</p>
-                                                    <p><strong>$QUOTEDATE</strong></p>
+                                                    <p><strong>$QUOTEDATE{MMM dd, yyy}</strong></p>
                                                     <p>Expires:</p>
-                                                    <p><strong>$QUOTEEXPIRY</strong></p>
+                                                    <p><strong>$QUOTEEXPIRY{MMM dd, yyy}</strong></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -174,31 +179,30 @@
                                                 <tr>
                                                     <td width="70%" bgcolor="#fff">
                                                     </td>
-                                                    <td colspan="4" bgcolor="#DFDFDF">
+                                                    <td colspan="4" bgcolor="#f6f6f6">
                                                         <p>Subtotal:</p>
                                                     </td>
-                                                    <td bgcolor="#DFDFDF">
+                                                    <td bgcolor="#f6f6f6">
                                                         <p>$QUOTESUBTOTAL</p>
                                                     </td>
                                                 </tr>
-
                                                 <tr>
                                                     <td width="70%" bgcolor="#fff">
                                                     </td>
-                                                    <td colspan="4" bgcolor="#DFDFDF">
+                                                    <td colspan="4" bgcolor="#f6f6f6">
                                                         <p>Tax:</p>
                                                     </td>
-                                                    <td bgcolor="#DFDFDF">
+                                                    <td bgcolor="#f6f6f6">
                                                         <p>$QUOTETAXTOTAL</p>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td width="70%" bgcolor="#fff">
                                                     </td>
-                                                    <td colspan="4" bgcolor="#DFDFDF">
+                                                    <td colspan="4" bgcolor="#f6f6f6">
                                                         <p>Total:</p>
                                                     </td>
-                                                    <td bgcolor="#DFDFDF">
+                                                    <td bgcolor="#f6f6f6">
                                                         <p>$QUOTETOTAL</p>
                                                     </td>
                                                 </tr>
